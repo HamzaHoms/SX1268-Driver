@@ -514,7 +514,7 @@ SX1268_Status SX68_ClearIRQStatus
 SX1268* dev //the target device struct
 )
 {
-  uint8_t clear_byte[2] = {0x02, 0x01};
+  uint8_t clear_byte[2] = {0xFF, 0xFF};
 
   return _SX68_CmdTXRX(dev, ClearIrqStatus, clear_byte, 2, NULL, 0);
 }
