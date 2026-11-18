@@ -24,33 +24,33 @@
 
 //command opcodes
 #define NOP 						0x00
-#define WriteBuffer 				0x0E
+#define WriteBuffer 					0x0E
 #define ReadBuffer					0x1E
 #define GetStatus	 				0xC0
-#define SetDioIrqParams	  			0x08
-#define SetDIO2AsRfSwitchCtrl	 	0x9D
-#define SetDIO3AsTCXOCtrl	 		0x97
-#define CalibrateFunction	 		0x89
-#define CalibrateImage				0x98
-#define SetRfFrequency				0x86
-#define SetPaConfig				0x95
-#define SetModulationParams		0x8B
-#define SetPacketParams			0x8C
-#define SetCadParams				0x88
-#define GetIrqStatus 				0x12
-#define ClearIrqStatus				0x02
-#define SetPacketType				0x8A
+#define SetDioIrqParams	  				0x08
+#define SetDIO2AsRfSwitchCtrl			 	0x9D
+#define SetDIO3AsTCXOCtrl	 			0x97
+#define CalibrateFunction	 			0x89
+#define CalibrateImage					0x98
+#define SetRfFrequency					0x86
+#define SetPaConfig					0x95
+#define SetModulationParams				0x8B
+#define SetPacketParams					0x8C
+#define SetCadParams					0x88
+#define GetIrqStatus 					0x12
+#define ClearIrqStatus					0x02
+#define SetPacketType					0x8A
 #define SetStandby					0x80
-#define SetBufferBaseAddress			0x8F
-#define GetRxBufferStatus			0x13
+#define SetBufferBaseAddress				0x8F
+#define GetRxBufferStatus				0x13
 #define GetPacketStatus 				0x14
 #define GetRssiInst					0x15
 #define SetTx						0x83
 #define SetRx						0x82
-#define WriteRegister 				0x0D
-#define ReadRegister 				0x1D
-#define SetCAD					0xC5
-#define SetTxParams				0x8E
+#define WriteRegister 					0x0D
+#define ReadRegister 					0x1D
+#define SetCAD						0xC5
+#define SetTxParams					0x8E
 
 //DIO pin macros
 #define DIO1 0
@@ -58,16 +58,16 @@
 #define DIO3 2
 
 //IRQ source bitmasks
-#define IRQ_TXDONE			 (uint16_t)0x0001
-#define IRQ_RXDONE 			 (uint16_t)0x0002
-#define IRQ_PREAMBLEDETECTED   (uint16_t)0x0004
-#define IRQ_SYNCWORDVALID 	 (uint16_t)0x0008
-#define IRQ_HEADERVALID 		 (uint16_t)0x0010
-#define IRQ_HEADERERR 		 (uint16_t)0x0020
-#define IRQ_CRCERROR 			 (uint16_t)0x0040
-#define IRQ_CADDONE 			 (uint16_t)0x0080
-#define IRQ_CADDETECTED 		 (uint16_t)0x0100
-#define IRQ_TIMEOUT			 (uint16_t)0x0200
+#define IRQ_TXDONE				 (uint16_t)0x0001
+#define IRQ_RXDONE 				 (uint16_t)0x0002
+#define IRQ_PREAMBLEDETECTED   		 	 (uint16_t)0x0004
+#define IRQ_SYNCWORDVALID 			 (uint16_t)0x0008
+#define IRQ_HEADERVALID 			 (uint16_t)0x0010
+#define IRQ_HEADERERR 				 (uint16_t)0x0020
+#define IRQ_CRCERROR 				 (uint16_t)0x0040
+#define IRQ_CADDONE 				 (uint16_t)0x0080
+#define IRQ_CADDETECTED 			 (uint16_t)0x0100
+#define IRQ_TIMEOUT				 (uint16_t)0x0200
 #define IRQ_ALL 				 (uint16_t)0x03FF
 
 //Power Amplifier Presets
@@ -88,7 +88,7 @@
 #define PA_HPmax_5			0x05
 #define PA_HPmax_6			0x06
 #define PA_HPmax_7			0x07
-#define PA_HPmax_MaxVal		PA_HPmax_7
+#define PA_HPmax_MaxVal			PA_HPmax_7
 
   //Default constant values for deviceSel and paLut
   // !!! DO NOT CHANGE THESE TWO !!!
