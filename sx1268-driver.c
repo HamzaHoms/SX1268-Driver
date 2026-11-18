@@ -142,7 +142,7 @@ SX1268* dev,
 uint8_t status
 )
 {
-  uint8_t dev_mode = status >> 4; //extract bits 4:6
+  uint8_t dev_mode = (status & 0b01110000) >> 4; //extract bits 4:6
   uint8_t cmd_sts = (status & 0b00001110) >> 1; //extract bits 1:3
 
   dev->CONTROL._dev_mode = dev_mode;
